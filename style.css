@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@media (min-width: 700px) {
+    body {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: Manrope;
+        color: rgba(0, 0, 0, 0.6);
+        background-color: hsl(213, 39%, 89%);
+    }
+
+    .card {
+        display: flex;
+        flex-direction: row;
+        background-color: hsl(0, 0%, 100%);
+        width: 80%;
+        max-width: 900px;
+        min-width: 300px;
+        margin: 0 auto;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        gap: 10px;
+
+    }
+
+
+    .img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 5px;
+
+    }
+
+    .img img {
+        height: 320px;
+        width: 400px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    h2 {
+        font-weight: 700;
+
+        padding: 20px;
+    }
+
+    .text {
+        font-weight: 200;
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+
+    .profile-card {
+        padding-right: 20px;
+        padding-left: 20px;
+        display: flex;
+        margin-top: 25px;
+        justify-content: space-between;
+    }
+
+    .left {
+        display: flex;
+        margin-top: 15px;
+    }
+
+    .left img {
+        border-radius: 50%;
+    }
+
+
+
+    .profile-card img {
+        height: 60px;
+
+    }
+
+    .info {
+        margin-left: 20px;
+    }
+
+    h4 {
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+
+    .right {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 10px;
+        position: relative;
+
+
+    }
+
+    #icon {
+        border: 2px solid black;
+        border-radius: 50%;
+        padding: 3px;
+        background-color: hsl(211, 34%, 87%);
+        cursor: pointer;
+    }
+
+    #common-share {
+        display: flex;
+        flex-direction: column;
+        display: none;
+    }
+
+
+
+
+
+
+    #share-window {
+        position: absolute;
+        display: flex;
+        background-color: rgb(112, 116, 138);
+        text-align: center;
+        bottom: 60px;
+        left: -250%;
+        border-radius: 8px;
+        padding-left: 30px;
+
+    }
+
+    #share-arrow {
+
+        position: absolute;
+        bottom: 42px;
+        left: 10%;
+
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 20px solid rgb(112, 116, 138);
+    }
+
+
+    .share-window span {
+        font-size: 20px;
+    }
+
+
+
+    .mini-window-text {
+        color: white;
+
+        margin: 10px 10px;
+    }
+
+
+
+    .right img {
+        height: 25px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    body{
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:100vh;
+        font-family: Manrope;
+        color: rgba(0,0,0,0.6);
+        background-color: hsl(213, 39%, 89%);
+    }
+    
+    .card {
+
+        display: flex;
+        flex-direction: column;
+        background-color: hsl(0, 0%, 100%);
+        width: 85%;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        /* gap: 10px;  */
+        position: relative;
+        
+    }
+    
+    
+     .img{
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+    }
+    
+    .img img{
+        height:200px;
+        width: 100%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    
+    
+    .content{
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid red; */
+        
+        padding: 20px;
+        
+    }
+    
+    h2{
+        font-weight: 700;
+        font-size: 15px;
+        
+        /* border: 2px solid green; */
+    }
+    
+    
+    .text{
+        font-weight: 400;
+        font-size: 14px;
+        /* border: 2px solid blue; */
+        margin: 20px auto;
+        
+       
+    }
+    
+
+    .profile-card{
+        
+        display: flex;
+        padding-top: 10px;
+        justify-content: space-between;
+        /* border: 2px solid purple; */
+    }
+
+    .left{
+        /* border: 2px solid orange; */
+        display: flex;
+    }
+    
+    .left img{
+        border-radius: 50%;
+    }
+    
+    
+    
+    .profile-card img{
+        height: 50px;
+    
+    }
+
+    .info{
+        /* border: 2px solid blue; */
+        margin-left: 10px;
+    }
+
+    h4{
+        margin-top:5px;
+        /* border: 2px solid black; */
+        
+        font-size: 14px;
+    }
+
+
+    /* ----------------------------------- */
+    .right{
+        
+        
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+       
+        margin-top: 10px;
+        
+    }
+
+
+    #icon{
+        border: 3px solid black;
+        border-radius: 50%;
+        padding: 5px;
+        background-color: hsl(211, 34%, 87%);
+        cursor:pointer;
+        position: absolute;
+        z-index: 1000;
+        margin-right: 20px;
+    }
+    
+    #common-share{
+        /* border: 2px solid red; */
+        display: flex;
+    }
+    
+    
+    
+    
+    
+    
+    #share-window{
+        /* border: 2px solid red; */
+        display: flex;
+        align-items:center;
+
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        
+        width: 100%;
+        height: 80px;
+
+        background-color: hsl(214, 17%, 51%);
+
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        
+    }
+    
+    #share-arrow{     
+        display:none;
+    }
+ 
+    .mini-window-text{
+        color:white;
+        
+        margin:10px 10px;  
+    }
+
+    #share{
+        /* border: 2px solid red; */
+        margin-left: 20px;
+        letter-spacing: 5px;
+    }
+    
+    
+    
+    .right img{
+        height: 18px; 
+        /* border: 2px solid red; */
+    }
+    
+}
